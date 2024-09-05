@@ -1,0 +1,33 @@
+*body{
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aqua; */
+}
+
+.navbar img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.navbar h1{
+    color: #3b1f9d;
+}
+
+.right_navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.right_navbar a{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 1.6rem;
+   color:white;
+   text-decoration: none;
+}
