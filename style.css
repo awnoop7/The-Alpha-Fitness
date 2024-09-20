@@ -6,6 +6,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    
 }
 .navbar{
     display: flex;
@@ -14,7 +15,7 @@ html, body {
     width: 100%;
     padding: 0 3vw;
     background-color: #2e1505; 
-    position:sticky;
+    position:fixed;
     top: 0;
     z-index: 1000;
 }
@@ -51,12 +52,11 @@ html, body {
 /* first section */
 .first_section{
     display: flex;
-    height: calc(100% - 70px);
+    /* height: calc(100% - 70px); */
+    height: 100%;
     width: 100%;
     background-color: #010101; 
-    position: relative;
 }
-
 
 .fl_section{
     display: flex;
@@ -100,42 +100,74 @@ html, body {
 
 /* second_section */
 .second_section{
+    height: calc(100% - 70px);
+    width: 100%;
+    background-color: #010101;
+}
+
+.second_section h2{
+    text-align: center;
+    font-size: 4.375rem;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+.s_container{
     display: flex;
     justify-content: center;
+    height: auto;
+    width: auto;
+}
+
+.s_container img {
+    display: flex;
+    height:40% auto;
+    width: 20%;
+    padding: 0.625px;
+    margin: 6% 0% 0% 15%;
+    border-radius: 20px;
+}
+.s_left p{
+    font-size: 1.5rem;
+    padding: 60px;
+    margin: 15% 5% 0% 0%;
+    color: white;
+}
+/* program */
+.program{
     height: calc(100% - 70px);
     width: 100%;
     background-color: #010101; 
 
 
-  
 }
-.second_section p{
-    /* justify-content: center;
-    font-size: 50px;
-    display: block;
-    margin-top: 50px;
-    position: absolute; */
+.program h2{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    padding-top: 30px;
+}
+.p_contain{
+    justify-content: center;
+    padding: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-gap: 30px;
+
+}
+.p_contain img{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.program p{
+    font-size: 1.5rem;
+    padding: 50px;
 }
 
-.second_main h2{
-    margin-top: 2%;
-    font-size: 90px;
-    /* opacity:  0.2; */
-    justify-content: center;
-    display: flex;
-}
-.sl_section img {
-    display: flex;
-    height:40%;
-    width: 20%;
-    padding: 10px;
-    margin: 3% 0% 0% 20%;
-    border-radius: 20px;
-}
-.sr_section p{
-    display: flex;
-    text-align: center;
-}
+
+
 
 
 
@@ -194,11 +226,40 @@ html, body {
     .fr_section img {
         width: 100%; 
         height: auto;
+        margin-top: 80px;
         }
+
     .first_section .btn {
         font-size: 10px;
-        margin: 20px 0px 0px 70px;
+        margin: 30px 0px 0px 70px;
     }
+    /* second_section */
+    .second_section { 
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .second_section h2{
+        /* padding-top: 50px; */
+        margin-top: 45px;
+        font-size: 40px;
+    }
+    .s_container {
+       display: flex;
+       flex-direction: column;
+    }
+    .s_container img{
+        height: 40vh;
+        width: 80vw;
+       margin-left: 35px;
+       padding-top: 40px;
+    }
+    .s_left p{
+        margin-top: -30px;
+        font-size: 1.1rem;
+    }
+    
+
 }
     
   
